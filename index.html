@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adrian Escosio — General Virtual Assistant</title>
+<meta name="description" content="Adrian Escosio — General Virtual Assistant specializing in lead generation, data entry, calendar management, and admin support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#home" class="nav__brand">AE<span>.</span></a>
+  <nav class="nav__links" id="navLinks">
+    <a href="#home" class="nav__link">Home</a>
+    <a href="#about" class="nav__link">Who Am I</a>
+    <a href="#services" class="nav__link">Services</a>
+    <a href="#work" class="nav__link">Work Samples</a>
+    <a href="#tools" class="nav__link">Tools I Used</a>
+    <a href="#contact" class="nav__link nav__link--cta nav__link--cta-mobile">Contact</a>
+  </nav>
+  <a href="#contact" class="nav__cta">Contact</a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adrianescosio@gmail.com" target="_blank" rel="noopener" class="nav__hire">Hire Me</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <span class="hero__tag reveal">Portfolio</span>
+    <p class="eyebrow reveal">Adrian Escosio</p>
+    <h1 class="hero__title reveal">Reliable General<br>Virtual Assistant</h1>
+    <p class="hero__typing reveal" aria-hidden="true">
+      Helping you with <span class="typing-word" id="typingWord"></span><span class="typing-cursor">|</span>
+    </p>
+    <p class="hero__subtitle reveal">
+      I help busy entrepreneurs and small teams stay organized and productive — from lead
+      generation and calendar management to email support and content scheduling — so you
+      can focus on growing your business.
+    </p>
+    <p class="hero__credibility reveal">
+      Trained across lead gen, data ops, calendar/email management, and admin support —
+      with a background in real business finance.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#work" class="btn btn--primary">View Portfolio</a>
+      <a href="#contact" class="btn btn--ghost">Hire Me</a>
+    </div>
+    <div class="availability reveal">
+      <span class="availability__dot"></span>
+      Available for Freelance · Remote Worldwide
+    </div>
+
+    <div class="trusted reveal">
+      <p class="trusted__label">Trusted tools I work with</p>
+      <div class="trusted__row">
+        <img src="assets/logo-google-workspace.png" alt="Google Workspace" title="Google Workspace" loading="lazy">
+        <img src="assets/logo-canva.png" alt="Canva" title="Canva" loading="lazy">
+        <img src="assets/logo-chatgpt.png" alt="ChatGPT" title="ChatGPT" loading="lazy">
+        <img src="assets/logo-claude.png" alt="Claude AI" title="Claude AI" loading="lazy">
+        <img src="assets/logo-gmail.png" alt="Gmail" title="Gmail" loading="lazy">
+        <img src="assets/logo-slack.png" alt="Slack" title="Slack" loading="lazy">
+        <img src="assets/logo-clickup.png" alt="ClickUp" title="ClickUp" loading="lazy">
+        <img src="assets/logo-trello.png" alt="Trello" title="Trello" loading="lazy">
+        <img src="assets/logo-zoom.png" alt="Zoom" title="Zoom" loading="lazy">
+        <img src="assets/logo-outlook.png" alt="Outlook" title="Outlook" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__orbit reveal" aria-hidden="true">
+    <div class="orbit__ring orbit__ring--1"></div>
+    <div class="orbit__ring orbit__ring--2"></div>
+    <div class="orbit__core"></div>
+    <div class="orbit__chip orbit__chip--1" title="Calendar Management">
+      <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9.5H21" stroke="currentColor" stroke-width="1.6"/><path d="M8 3V6.5M16 3V6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </div>
+    <div class="orbit__chip orbit__chip--2" title="Email Marketing">
+      <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.5" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6.5L12 13L20.5 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </div>
+    <div class="orbit__chip orbit__chip--3" title="Lead Generation">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>
+    </div>
+    <div class="orbit__chip orbit__chip--4" title="Data Entry">
+      <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.5H20.5M9.5 9.5V20.5" stroke="currentColor" stroke-width="1.6"/></svg>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+    <span></span>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about__frame reveal">
+    <div class="about__photo-wrap">
+      <img src="assets/profile.jpg" alt="Adrian Escosio" class="about__photo" loading="lazy">
+    </div>
+    <div class="about__accent" aria-hidden="true"></div>
+  </div>
+
+  <div class="about__content">
+    <p class="eyebrow reveal">Who Am I</p>
+    <h2 class="section-title reveal">About Me</h2>
+
+    <div class="about__text reveal">
+      <p>
+        I'm an Entrepreneurship graduate and certified General Virtual Assistant with a
+        background in business operations and finance. As Finance Head for a
+        student-run business project, I managed ₱109,000 in capital and delivered
+        ₱40,000+ in net profit — an experience that taught me to treat every task, no
+        matter how small, as something that affects a real outcome. That same
+        accountability now shapes how I handle VA work: I've trained hands-on in lead
+        generation, data management, calendar/email organization, and admin support,
+        and I bring the same discipline to every client task.
+      </p>
+    </div>
+
+    <div class="stat-row reveal">
+      <div class="stat">
+        <span class="stat__num">₱109K</span>
+        <span class="stat__label">Business capital managed</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">₱40K+</span>
+        <span class="stat__label">Net profit delivered</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">5+</span>
+        <span class="stat__label">Certified VA skill areas</span>
+      </div>
+    </div>
+
+    <div class="tag-cloud reveal">
+      <span>Lead Generation</span>
+      <span>Data Entry</span>
+      <span>Data Scraping</span>
+      <span>Email Marketing</span>
+      <span>Calendar Management</span>
+      <span>Social Scheduling</span>
+      <span>Financial Reporting</span>
+      <span>Google Workspace</span>
+      <span>MS Office</span>
+      <span>Canva</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <p class="eyebrow eyebrow--center reveal">What I Do</p>
+  <h2 class="section-title section-title--center reveal">Services Offered</h2>
+
+  <div class="services__grid">
+    <div class="card reveal">
+      <div class="card__icon">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg>
+      </div>
+      <h3 class="card__title">Lead Generation</h3>
+      <p class="card__text">
+        I research and build qualified prospect lists from LinkedIn and Instagram, complete
+        with verified names, roles, and contact details — so outreach starts with the right
+        people, not a cold guess.
+      </p>
+    </div>
+
+    <div class="card reveal">
+      <div class="card__icon">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.5H20.5M9.5 9.5V20.5M15 9.5V20.5" stroke="currentColor" stroke-width="1.6"/></svg>
+      </div>
+      <h3 class="card__title">Data Entry</h3>
+      <p class="card__text">
+        I clean, structure, and input business data into spreadsheets that are easy to search
+        and act on — consistent formatting and accuracy on every row, every time.
+      </p>
+    </div>
+
+    <div class="card reveal">
+      <div class="card__icon">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9.5H21" stroke="currentColor" stroke-width="1.6"/><path d="M8 3V6.5M16 3V6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7.5 13.5L10 16L16.5 9.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3 class="card__title">Executive Assistant</h3>
+      <p class="card__text">
+        From inbox triage to calendar coordination, I keep your day running on schedule —
+        meetings booked, follow-ups sent, and nothing left to fall through the cracks.
+      </p>
+    </div>
+
+    <div class="card reveal">
+      <div class="card__icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M8 3.5H16V6.5H8V3.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M5.5 6.5H18.5V20.5H5.5V6.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8.5 11H15.5M8.5 14.5H15.5M8.5 18H12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </div>
+      <h3 class="card__title">Admin Support</h3>
+      <p class="card__text">
+        Reports, scheduling, and the recurring tasks that keep a business moving — handled
+        with the same budgeting discipline I used managing ₱109,000 in real project capital.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- WORK SAMPLES -->
+<section class="work" id="work">
+  <p class="eyebrow eyebrow--center reveal">Proof of Work</p>
+  <h2 class="section-title section-title--center reveal">Work Samples</h2>
+  <p class="work__intro reveal">Hands-on samples showing how I execute each task end-to-end.</p>
+
+  <div class="work__grid">
+    <article class="work-card reveal" data-full="assets/work-leadgen.jpg" data-title="Lead Generation">
+      <div class="work-card__frame">
+        <img src="assets/work-leadgen.jpg" alt="Lead generation spreadsheet with verified LinkedIn contacts" loading="lazy">
+      </div>
+      <div class="work-card__body">
+        <h3>Lead Generation</h3>
+        <p>A prospect list built from LinkedIn outreach — verified names, roles, contact info, and profile links, ready for follow-up.</p>
+        <div class="work-card__badges">
+          <span><img src="assets/logo-linkedin-sales-navigator.png" alt="">LinkedIn Sales Navigator</span>
+          <span><img src="assets/logo-salesql.png" alt="">SalesQL</span>
+        </div>
+        <button class="view-sample" type="button">View Details</button>
+      </div>
+    </article>
+
+    <article class="work-card reveal" data-full="assets/work-dataentry.jpg" data-title="Data Entry">
+      <div class="work-card__frame">
+        <img src="assets/work-dataentry.jpg" alt="Cleaned business directory spreadsheet" loading="lazy">
+      </div>
+      <div class="work-card__body">
+        <h3>Data Entry</h3>
+        <p>A cleaned business directory with contact details and social links, standardized for fast searching and outreach.</p>
+        <div class="work-card__badges">
+          <span><img src="assets/logo-google-workspace.png" alt="">Google Workspace</span>
+        </div>
+        <button class="view-sample" type="button">View Details</button>
+      </div>
+    </article>
+
+    <article class="work-card reveal" data-full="assets/work-calendar.jpg" data-title="Calendar Management">
+      <div class="work-card__frame">
+        <img src="assets/work-calendar.jpg" alt="Weekly calendar fully scheduled with meetings and tasks" loading="lazy">
+      </div>
+      <div class="work-card__body">
+        <h3>Calendar Management</h3>
+        <p>A full week planned and color-coded — meetings, reviews, and deadlines, with zero double-bookings.</p>
+        <div class="work-card__badges">
+          <span><img src="assets/logo-google-workspace.png" alt="">Google Workspace</span>
+        </div>
+        <button class="view-sample" type="button">View Details</button>
+      </div>
+    </article>
+
+    <article class="work-card reveal" data-full="assets/work-contentcal.jpg" data-title="Content Calendar">
+      <div class="work-card__frame">
+        <img src="assets/work-contentcal.jpg" alt="Social media content calendar spreadsheet" loading="lazy">
+      </div>
+      <div class="work-card__body">
+        <h3>Content Calendar</h3>
+        <p>A month of social content mapped out — captions, formats, hashtags, and calls-to-action, ready to schedule.</p>
+        <div class="work-card__badges">
+          <span><img src="assets/logo-google-workspace.png" alt="">Google Workspace</span>
+        </div>
+        <button class="view-sample" type="button">View Details</button>
+      </div>
+    </article>
+
+    <article class="work-card reveal" data-full="assets/work-scraping.jpg" data-title="Data Scraping">
+      <div class="work-card__frame">
+        <img src="assets/work-scraping.jpg" alt="Scraped local business data spreadsheet" loading="lazy">
+      </div>
+      <div class="work-card__body">
+        <h3>Data Scraping</h3>
+        <p>Local business data gathered and organized — names, sites, contacts, and addresses, structured for outreach.</p>
+        <div class="work-card__badges">
+          <span><img src="assets/logo-google-workspace.png" alt="">Google Workspace</span>
+        </div>
+        <button class="view-sample" type="button">View Details</button>
+      </div>
+    </article>
+
+    <article class="work-card reveal" data-full="assets/work-email.jpg" data-title="Email Marketing">
+      <div class="work-card__frame">
+        <img src="assets/work-email.jpg" alt="Scheduled outreach email draft in Gmail" loading="lazy">
+      </div>
+      <div class="work-card__body">
+        <h3>Email Marketing</h3>
+        <p>A scheduled outreach email drafted end-to-end, from subject line to closing CTA, ready to send.</p>
+        <div class="work-card__badges">
+          <span><img src="assets/logo-gmail.png" alt="">Gmail</span>
+        </div>
+        <button class="view-sample" type="button">View Details</button>
+      </div>
+    </article>
+
+    <article class="work-card reveal" data-full="assets/work-contentsched.jpg" data-title="Content Scheduling">
+      <div class="work-card__frame">
+        <img src="assets/work-contentsched.jpg" alt="Social media post creation and scheduling workflow" loading="lazy">
+      </div>
+      <div class="work-card__body">
+        <h3>Content Scheduling</h3>
+        <p>Planned, designed, and scheduled branded social content end-to-end — writing captions, setting publish times, and previewing the live post before it went out.</p>
+        <div class="work-card__badges">
+          <span><img src="assets/logo-canva.png" alt="">Canva</span>
+          <span><img src="assets/logo-meta-business-suite.png" alt="">Meta Business Suite</span>
+        </div>
+        <button class="view-sample" type="button">View Details</button>
+      </div>
+    </article>
+
+    <article class="work-card reveal" data-full="assets/work-trello.jpg" data-title="Project Management (Trello)">
+      <div class="work-card__frame">
+        <img src="assets/work-trello.jpg" alt="Trello board used for managing daily business operations" loading="lazy">
+      </div>
+      <div class="work-card__body">
+        <h3>Project Management (Trello)</h3>
+        <p>Managed daily business operations on a structured Trello board — organizing client requests, prioritizing tasks by deadline, and tracking progress from intake to completion.</p>
+        <div class="work-card__badges">
+          <span><img src="assets/logo-trello.png" alt="">Trello</span>
+          <span>Kanban Workflow</span>
+        </div>
+        <button class="view-sample" type="button">View Details</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- TOOLS I USED -->
+<section class="tools" id="tools">
+  <p class="eyebrow eyebrow--center reveal">My Toolkit</p>
+  <h2 class="section-title section-title--center reveal">Tools I Used</h2>
+  <p class="tools__intro reveal">
+    A quick look at the platforms I rely on day-to-day — grouped by what I use them for.
+  </p>
+
+  <div class="tools__groups">
+    <div class="tool-group reveal">
+      <h3 class="tool-group__title">Lead Generation &amp; Prospecting</h3>
+      <div class="logo-grid">
+        <div class="logo-tile"><img src="assets/logo-linkedin-sales-navigator.png" alt="LinkedIn Sales Navigator" loading="lazy"><span>LinkedIn Sales Navigator</span></div>
+        <div class="logo-tile"><img src="assets/logo-apollo.png" alt="Apollo.io" loading="lazy"><span>Apollo.io</span></div>
+        <div class="logo-tile"><img src="assets/logo-salesql.png" alt="SalesQL" loading="lazy"><span>SalesQL</span></div>
+        <div class="logo-tile"><img src="assets/logo-contactout.png" alt="ContactOut" loading="lazy"><span>ContactOut</span></div>
+      </div>
+    </div>
+
+    <div class="tool-group reveal">
+      <h3 class="tool-group__title">Communication</h3>
+      <div class="logo-grid">
+        <div class="logo-tile"><img src="assets/logo-gmail.png" alt="Gmail" loading="lazy"><span>Gmail</span></div>
+        <div class="logo-tile"><img src="assets/logo-outlook.png" alt="Outlook" loading="lazy"><span>Outlook</span></div>
+        <div class="logo-tile"><img src="assets/logo-zoom.png" alt="Zoom" loading="lazy"><span>Zoom</span></div>
+        <div class="logo-tile"><img src="assets/logo-slack.png" alt="Slack" loading="lazy"><span>Slack</span></div>
+        <div class="logo-tile"><img src="assets/logo-loom.png" alt="Loom" loading="lazy"><span>Loom</span></div>
+      </div>
+    </div>
+
+    <div class="tool-group reveal">
+      <h3 class="tool-group__title">Project Management</h3>
+      <div class="logo-grid">
+        <div class="logo-tile"><img src="assets/logo-clickup.png" alt="ClickUp" loading="lazy"><span>ClickUp</span></div>
+        <div class="logo-tile"><img src="assets/logo-trello.png" alt="Trello" loading="lazy"><span>Trello</span></div>
+        <div class="logo-tile"><img src="assets/logo-meta-business-suite.png" alt="Meta Business Suite" loading="lazy"><span>Meta Business Suite</span></div>
+      </div>
+    </div>
+
+    <div class="tool-group reveal">
+      <h3 class="tool-group__title">Content Creation</h3>
+      <div class="logo-grid">
+        <div class="logo-tile"><img src="assets/logo-canva.png" alt="Canva" loading="lazy"><span>Canva</span></div>
+        <div class="logo-tile"><img src="assets/logo-capcut.png" alt="CapCut" loading="lazy"><span>CapCut</span></div>
+      </div>
+    </div>
+
+    <div class="tool-group reveal">
+      <h3 class="tool-group__title">Productivity</h3>
+      <div class="logo-grid">
+        <div class="logo-tile"><img src="assets/logo-google-workspace.png" alt="Google Workspace" loading="lazy"><span>Google Workspace</span></div>
+        <div class="logo-tile"><img src="assets/logo-dropbox.png" alt="Dropbox" loading="lazy"><span>Dropbox</span></div>
+      </div>
+    </div>
+
+    <div class="tool-group reveal">
+      <h3 class="tool-group__title">AI Tools</h3>
+      <div class="logo-grid">
+        <div class="logo-tile"><img src="assets/logo-chatgpt.png" alt="ChatGPT" loading="lazy"><span>ChatGPT</span></div>
+        <div class="logo-tile"><img src="assets/logo-claude.png" alt="Claude AI" loading="lazy"><span>Claude AI</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact__inner reveal">
+    <p class="eyebrow">Let's Work Together</p>
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact__intro">
+      Have a task that needs a reliable hand? I'd be glad to help — reach out and let's talk
+      about what you need.
+    </p>
+
+    <div class="contact__links">
+      <a href="mailto:adrianescosio@gmail.com" class="contact__item">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5.5" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 6.5L12 13L20.5 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>adrianescosio@gmail.com</span>
+      </a>
+      <a href="tel:+639935143622" class="contact__item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6 3.5C5 3.5 4 4.5 4 5.5C4 14 10 20 18.5 20C19.5 20 20.5 19 20.5 18L20.5 15.5L16.5 14L15 16C12.5 15 9 11.5 8 9L10 7.5L8.5 3.5H6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span>0993 514 3622</span>
+      </a>
+      <a href="https://www.linkedin.com/in/adrianescosio" target="_blank" rel="noopener" class="contact__item">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M7.5 10V16.5M7.5 7.6V7.62M11.5 16.5V10M11.5 12.7C11.5 11 12.6 9.8 14 9.8C15.4 9.8 16.3 10.8 16.3 12.7V16.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span>linkedin.com/in/adrianescosio</span>
+      </a>
+    </div>
+
+    <a href="mailto:adrianescosio@gmail.com" class="btn btn--primary contact__cta">Email Me</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Adrian Escosio. All rights reserved.</p>
+  <a href="#home" class="footer__top">Back to top ↑</a>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close preview">&times;</button>
+  <figure>
+    <img src="" alt="" id="lightboxImg">
+    <figcaption>
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxDesc"></p>
+      <div class="lightbox__badges" id="lightboxBadges"></div>
+    </figcaption>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
